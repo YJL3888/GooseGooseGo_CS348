@@ -29,6 +29,7 @@ CREATE TABLE food_items(
     price DECIMAL(10, 2) NOT NULL,
     description TEXT
 )
+```
 Load sample data into the database
 ```
 INSERT INTO food_items (name, price, description) VALUES ('RiceNoodle', 0.00, 'rice noodle refils are free at Yunshang');
