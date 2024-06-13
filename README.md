@@ -17,12 +17,12 @@ You are now connected to the RDS database!
 Here are the queries necessary to create a sample database
 
 Create a database and use it for upcoming queries
-```
+```sql
 CREATE DATABASE sample_db;
 USE sample_db;
 ```
 Create table for `food_items`
-```
+```sql
 CREATE TABLE food_items(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE food_items(
 )
 ```
 Load sample data into the database
-```
+```sql
 INSERT INTO food_items (name, price, description) VALUES ('RiceNoodle', 0.00, 'rice noodle refils are free at Yunshang');
 INSERT INTO food_items (name, price, description) VALUES ('Foodie Sushi', 16.00, 'foodie fruity has a varity of selection including sushis');
 ```
