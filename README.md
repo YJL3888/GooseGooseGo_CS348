@@ -14,7 +14,7 @@ For our project, we have decided to use AWS RDS running MySQL.
    - **Port:** Enter the port number your database listens on. The default port for MySQL is `3306`.
    - **Username/Password:** Enter the database username/password provided by your AWS RDS setup.
 4. Test connection to make sure everything is working and click OK
-You are now connected to the RDS database!
+5. You are now connected to the RDS database!
 
 ### Create Sample Database
 Here are the queries necessary to create a sample database
