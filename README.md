@@ -9,8 +9,11 @@ For our project, we have decided to use AWS RDS running MySQL.
 ### Connection
 1. To connect to the database, first download MySQL Workbench ```https://www.mysql.com/products/workbench/```
 2. Create a new connection by clicking the '+' sign beside "MySQL Connections"
-3. Enter a connection name, the hostname is the RDS endpoint, the username and the password.
-4. Test connection to make sure everything is working and click OK.
+3. **Enter Connection Details:**
+   - **Hostname:** Enter the RDS endpoint from AWS. You can find this in the AWS Management Console under the RDS instance details. It usually looks like `your-db-instance.c123456789012.us-west-2.rds.amazonaws.com`.
+   - **Port:** Enter the port number your database listens on. The default port for MySQL is `3306`.
+   - **Username/Password:** Enter the database username/password provided by your AWS RDS setup.
+4. Test connection to make sure everything is working and click OK
 You are now connected to the RDS database!
 
 ### Create Sample Database
