@@ -39,4 +39,7 @@ INSERT INTO food_items (name, price, description) VALUES ('RiceNoodle', 0.00, 'r
 INSERT INTO food_items (name, price, description) VALUES ('Foodie Sushi', 16.00, 'foodie fruity has a varity of selection including sushis');
 ```
 
-The database has been loaded with sample data!
+The database has been loaded with sample data! You can check it out with
+```sql
+SELECT * FROM food_items
+```
