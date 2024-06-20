@@ -4,7 +4,7 @@
 This project aims to develop a web application for tracking menus, ingredients, and prices of various food places in Waterloo.
 
 ## Database Setup
-For our project, we have decided to use AWS RDS running MySQL. 
+For our project, we have decided to use AWS RDS running MySQL in the us-east-1 (N.Virginia) Region. 
 
 ### Connection
 1. To connect to the database, first download MySQL Workbench ```https://www.mysql.com/products/workbench/```
