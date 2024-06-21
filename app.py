@@ -16,6 +16,15 @@ def hash_password(password):
     """Hash a password for storing."""
     return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
+def create_account(conn, username, password, email):
+    """Create a new user account"""
+    hashed_password = hash_password(password)
+    with conn.cursor() as cursor:
+        query = "INSERT INTO Users (username, password, email) VALUES (%s, %s, %s)"
+        cursor.execute(query, (username, hashed_password, email))
+        conn.commit()
+        print('Account created successfully.')
+
 
 def select_food_items(conn):
     """Query the database and print the results."""
