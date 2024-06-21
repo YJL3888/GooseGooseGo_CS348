@@ -25,6 +25,14 @@ def create_account(conn, username, password, email):
         conn.commit()
         print('Account created successfully.')
 
+def add_to_favorites(conn, user_id, restaurant_id):
+    """Add a restaurant to a user's favorites"""
+    with conn.cursor() as cursor:
+        query = "INSERT INTO Favorites (user_id, restaurant_id) VALUES (%s, %s)"
+        cursor.execute(query, (user_id, restaurant_id))
+        conn.commit()
+        print('Restaurant added to favorites.')
+
 
 def select_food_items(conn):
     """Query the database and print the results."""
