@@ -1,5 +1,6 @@
 import mysql.connector
 import os
+import bcrypt
 
 
 def create_connection():
@@ -8,8 +9,12 @@ def create_connection():
         host='goosegoosego.clegmk4ois3q.us-east-1.rds.amazonaws.com',
         user='admin',
         password=os.getenv('DB_PASSWORD'),
-        database='sample_db'
+        database='sample_data'
     )
+
+def hash_password(password):
+    """Hash a password for storing."""
+    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
 
 def select_food_items(conn):
